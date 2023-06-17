@@ -65,9 +65,9 @@ const App = () => {
         },
       },
       palette: {
-        primary: { main: system.color.darkTheme.palette.primary || "#52d869" },
+        primary: { main: system.color.darkTheme.palette.primary || "#5a01a9" },
         secondary: { main: system.color.darkTheme.palette.secondary || "#ff9100" },
-        toolbar: { main: system.color.darkTheme.toolbar.background || "#52d869" },
+        toolbar: { main: system.color.darkTheme.toolbar.background || "#5a01a9" },
         menuItens: { main: system.color.darkTheme.menuItens || "#181d22" },
         sub: { main: system.color.darkTheme.sub || "#181d22" },
         toolbarIcon: { main: system.color.darkTheme.toolbarIcon || "#181d22"},
@@ -77,7 +77,7 @@ const App = () => {
           paper: system.color.darkTheme.palette.background.paper || "#181d22",
         },
         text: {
-          primary: system.color.darkTheme.palette.text.primary || "#52d869",
+          primary: system.color.darkTheme.palette.text.primary || "#5a01a9",
           secondary: system.color.darkTheme.palette.text.secondary || "#ffffff",
         },
       },
