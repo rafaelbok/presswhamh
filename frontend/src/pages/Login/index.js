@@ -22,19 +22,6 @@ import { AuthContext } from "../../context/Auth/AuthContext";
 import { system } from "../../config.json";
 import logo from '../../assets/logo.png';
 
-const Copyright = () => {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      © {new Date().getFullYear()}
-      {" - "}
-      <Link color="inherit" href={system.url || "https://github.com/rtenorioh/Press-Ticket"}>
-        {system.name}
-      </Link>
-      {"."}
-    </Typography>
-  );
-};
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -124,18 +111,6 @@ const Login = () => {
           >
             {i18n.t("login.buttons.submit")}
           </Button>
-          <Grid container>
-            <Grid item>
-              <Link
-                href="#"
-                variant="body2"
-                component={RouterLink}
-                to="/signup"
-              >
-                {i18n.t("login.buttons.register")}
-              </Link>
-            </Grid>
-          </Grid>
         </form>
       </div>
       <Box mt={8}><Copyright /></Box>
