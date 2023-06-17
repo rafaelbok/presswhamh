@@ -111,6 +111,17 @@ const Login = () => {
           >
             {i18n.t("login.buttons.submit")}
           </Button>
+          <Grid container>
+            <Grid item>
+              <Link
+                href="https://financeiro.meuhub.com.br/register.php"
+                variant="body2"
+                component={RouterLink}
+              >
+                {i18n.t("login.buttons.register")}
+              </Link>
+            </Grid>
+          </Grid>
         </form>
       </div>
       <Box mt={8}><Copyright /></Box>
