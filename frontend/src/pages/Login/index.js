@@ -123,17 +123,7 @@ const Login = () => {
             className={classes.submit}
           >
             {i18n.t("login.buttons.submit")}
-          </Button>
           
-              >
-                {i18n.t("login.buttons.register")}
-              </Link>
-            </Grid>
-          </Grid>
-        </form>
-      </div>
-      <Box mt={8}><Copyright /></Box>
-    </Container>
   );
 };
 
