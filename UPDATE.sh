@@ -102,5 +102,5 @@ sleep 2
 pm2 restart all
 
 echo " "
-echo "PRESS TICKET ATUALIZADO COM SUCESSO!!!"
+echo "WASAP ATUALIZADO COM SUCESSO!!!"
 echo " "
