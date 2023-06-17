@@ -124,13 +124,7 @@ const Login = () => {
           >
             {i18n.t("login.buttons.submit")}
           </Button>
-          <Grid container>
-            <Grid item>
-              <Link
-                href="#"
-                variant="body2"
-                component={RouterLink}
-                to="/signup"
+          
               >
                 {i18n.t("login.buttons.register")}
               </Link>
