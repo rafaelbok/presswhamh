@@ -168,26 +168,11 @@ const MainListItems = (props) => {
               {i18n.t("mainDrawer.listItems.apititle")}
             </ListSubheader>
             <ListItemLink
-              to="/api"
-              primary={i18n.t("mainDrawer.listItems.api")}
-              icon={
-                <Code />
-              }
+            href="https://docs.meuhub.com.br/categoria/wasap/"
+            primary={i18n.t("mainDrawer.listItems.apidocs")}
+            icon={<MenuBook />}
             />
-            import { Link } from 'react-router-dom';
-
-// ...
-
-<Link to="https://docs.meuhub.com.br/categoria/wasap/" target="_blank" rel="noopener noreferrer">
-  <ListItem button>
-    <ListItemIcon>
-      <MenuBook />
-    </ListItemIcon>
-    <ListItemText primary={i18n.t("mainDrawer.listItems.apidocs")} />
-  </ListItem>
-</Link>
-}
-
+            }  
             />
             <ListItemLink
               to="/apikey"
