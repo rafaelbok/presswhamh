@@ -6,10 +6,10 @@ module.exports = {
       "Users",
       [
         {
-          name: "Press-Ticket",
-          email: "admin@pressticket.com.br",
+          name: "Administrador",
+          email: "admin@wasap.com.br",
           passwordHash: "$2a$08$WaEmpmFDD/XkDqorkpQ42eUZozOqRCPkPcTkmHHMyuTGUOkI8dHsq",
-          profile: "admin",
+          profile: "wasap",
           tokenVersion: 0,
           createdAt: new Date(),
           updatedAt: new Date()
