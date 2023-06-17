@@ -48,25 +48,32 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ListItemLink(props) {
-  const { icon, primary, to, className } = props;
+  const { icon, primary, to, href, className } = props;
   const classes = useStyles();
 
-  const renderLink = React.useMemo(
-    () =>
-      React.forwardRef((itemProps, ref) => (
-        <RouterLink to={to} ref={ref} {...itemProps} />
-      )),
-    [to]
-  );
+  if (to) {
+    return (
+      <li className={classes.li}>
+        <ListItem button component={RouterLink} to={to} className={className}>
+          {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
+          <ListItemText primary={primary} />
+        </ListItem>
+      </li>
+    );
+  }
 
-  return (
-    <li className={classes.li}>
-      <ListItem button component={renderLink} className={className}>
-        {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
-        <ListItemText primary={primary} />
-      </ListItem>
-    </li>
-  );
+  if (href) {
+    return (
+      <li className={classes.li}>
+        <ListItem button component="a" href={href} className={className} target="_blank" rel="noopener noreferrer">
+          {icon ? <ListItemIcon className={classes.icon}>{icon}</ListItemIcon> : null}
+          <ListItemText primary={primary} />
+        </ListItem>
+      </li>
+    );
+  }
+
+  return null;
 }
 
 const MainListItems = (props) => {
@@ -170,23 +177,17 @@ const MainListItems = (props) => {
             <ListItemLink
               to="/api"
               primary={i18n.t("mainDrawer.listItems.api")}
-              icon={
-                <Code />
-              }
+              icon={<Code />}
             />
             <ListItemLink
-              to="https://docs.meuhub.com.br/categoria/wasap/"
+              href="https://docs.meuhub.com.br/categoria/wasap/"
               primary={i18n.t("mainDrawer.listItems.apidocs")}
-              icon={
-                <MenuBook />
-              }
+              icon={<MenuBook />}
             />
             <ListItemLink
               to="/apikey"
               primary={i18n.t("mainDrawer.listItems.apikey")}
-              icon={
-                <VpnKeyRounded />
-              }
+              icon={<VpnKeyRounded />}
             />
           </>
         )}
