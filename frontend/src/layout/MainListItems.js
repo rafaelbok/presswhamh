@@ -168,11 +168,18 @@ const MainListItems = (props) => {
               {i18n.t("mainDrawer.listItems.apititle")}
             </ListSubheader>
             <ListItemLink
-            href="https://docs.meuhub.com.br/categoria/wasap/"
-            primary={i18n.t("mainDrawer.listItems.apidocs")}
-            icon={<MenuBook />}
+              to="/api"
+              primary={i18n.t("mainDrawer.listItems.api")}
+              icon={
+                <Code />
+              }
             />
-            }  
+            <ListItemLink
+              to="/apidocs"
+              primary={i18n.t("mainDrawer.listItems.apidocs")}
+              icon={
+                <MenuBook />
+              }
             />
             <ListItemLink
               to="/apikey"
