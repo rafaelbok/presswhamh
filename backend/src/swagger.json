@@ -1,17 +1,17 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Documentação da API do Press Ticket",
+        "title": "Documentação da API",
         "description": "Documentação da API para envio de mensagens e mídia.",
         "contact": {
-            "email": "robson.tenorio@gmail.com"
+            "email": "contato@meuhub.com.br"
         },
         "version": "1.0.0"
     },
     "servers": [
         {
-            "url": "https://apisac.pypress.com.br",
-            "description": "API Press Ticket"
+            "url": "https://wasap.com.br",
+            "description": "API"
         }
     ],
     "paths": {
