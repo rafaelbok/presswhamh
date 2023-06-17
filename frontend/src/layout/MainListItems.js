@@ -174,18 +174,19 @@ const MainListItems = (props) => {
                 <Code />
               }
             />
-            <ListItem
-           button
-           component="a"
-           href="https://docs.meuhub.com.br/categoria/wasap/"
-           target="_blank"
-           rel="noopener noreferrer"
-          >
-            <ListItemIcon>
-            <HelpOutlineIcon />
-            </ListItemIcon>
-            <ListItemText primary={i18n.t("mainDrawer.listItems.apidocs")} />
-          </ListItem>
+            import { Link } from 'react-router-dom';
+
+// ...
+
+<Link to="https://docs.meuhub.com.br/categoria/wasap/" target="_blank" rel="noopener noreferrer">
+  <ListItem button>
+    <ListItemIcon>
+      <MenuBook />
+    </ListItemIcon>
+    <ListItemText primary={i18n.t("mainDrawer.listItems.apidocs")} />
+  </ListItem>
+</Link>
+}
 
             />
             <ListItemLink
